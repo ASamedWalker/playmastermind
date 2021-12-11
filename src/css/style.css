@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+
+:root {
+  --peg-red: #f1200e;
+  --peg-black: #373338;
+  --flag-white: #ddd7fc;
+  --flag-red: #f2080b;
+  --color-blue: #23a6d5;
+}
+
+html {
+  font-family: "Outfit", sans-serif;
+  font-size: 25px;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  background-color: bisque;
+}

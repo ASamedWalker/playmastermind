@@ -1,4 +1,4 @@
-import {codeLength, minNumbers, maxNumbers} from "./Config.js"
+import {codeLength, minNumbers, maxNumbers} from "../js/Config.js"
 
 class CodeMaker {
     /*Use the async function to implicitly returns a 

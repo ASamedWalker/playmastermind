@@ -1,4 +1,4 @@
-import { default as boardView } from "./Views/BoardView.js";
+import { default as boardView } from "../Views/BoardView.js";
 
 
 class UI {
