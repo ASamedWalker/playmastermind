@@ -19,3 +19,141 @@ body {
   width: 100%;
   background-color: bisque;
 }
+
+/*Main container - wrapper*/
+/* .main-wrapper {
+  padding: 1.6rem;
+  height: 750px;
+  width: 430px;
+  margin: 10px auto;
+  display: flex;
+  flex-direction: column;
+  border: 3px solid white;
+  border-radius: 7px;
+} */
+
+.main-wrapper {
+  height: 75%;
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-rows: 1fr 5fr 1fr;
+}
+
+/*Header*/
+.header-section {
+  /*Grid-area*/
+  /*row-start/column-start/row-end/column-end:*/
+  grid-area: 1 / 1 / 2 / 2;
+}
+
+.header-title {
+  color: var(--peg-black);
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.new-game {
+  grid-area: 1 / 2 / 2 / 3;
+  display: flex;
+  justify-content: center;
+}
+
+.difficulty,
+.btn-new-game {
+  border: none;
+  font-size: 1rem;
+  font-family: 'Expletus Sans', 'Gruppo', monospace;
+  padding: 0.3rem 0.5rem;
+  color: var(--flag-white);
+  border-radius: 0.3rem;
+  background-color: var(--peg-black);
+  cursor: pointer;
+}
+
+.difficulty:hover,
+.btn-new-game:hover {
+  color: var(--peg-black);
+  background-color: var(--flag-white);
+}
+
+.game-try {
+  min-width: 15rem;
+  min-height: 2.8rem;
+  margin: 0.5rem;
+  border-radius: 0.3rem;
+  display: flex;
+  justify-content: space-around;
+  border: 0.1rem solid var(--peg-black);
+}
+
+.choice {
+  height: 2rem;
+  width: 2rem;
+  border: 2px solid var(--peg-black);
+  border-radius: 2rem;
+  margin: 0 0.15rem;
+}
+
+.choice-row,
+.occurrence-status-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.occurrence-status-row {
+  width: 25%;
+}
+
+.choice-row {
+  width: 75%;
+}
+
+.choice-number {
+  width: 2rem;
+  height: 2rem;
+  text-align: center;
+}
+
+.occurrence-status-flag {
+  width: 0.2rem;
+  height: 0.2rem;
+  padding: 2px;
+  border-radius: 1rem;
+}
+
+.choice-number span {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+@media (max-width: 786px) {
+  html {
+    font-size: 14px;
+  }
+
+  .main-wrapper {
+    height: 90%;
+    width: 90%;
+    padding: 0;
+    margin: 0 auto;
+    border: 1px solid gray;
+    border-radius: 5px;
+  }
+
+  .header-section,
+  .new-game,
+  .game-board-view,
+  .number-picker-view {
+    padding-bottom: 1rem;
+  }
+}
+
+/* highscors */
+.high-score-item {
+  display: flex;
+  justify-content: space-between;
+}
