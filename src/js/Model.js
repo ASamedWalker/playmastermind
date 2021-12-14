@@ -40,12 +40,12 @@ export const getCurrentTurn = () => {
   return gameState.currentTurn;
 };
 
-export const setOccurrenceStatus = (occurrenceStatus) => {
-  gameState.occurrenceStatus = occurrenceStatus;
-};
-
 export const getOccurrenceStatus = () => {
   return gameState.occurrenceStatus;
+};
+
+export const setOccurrenceStatus = (occurrenceStatus) => {
+  gameState.occurrenceStatus = occurrenceStatus;
 };
 
 export const resetGuessedCode = () => {
